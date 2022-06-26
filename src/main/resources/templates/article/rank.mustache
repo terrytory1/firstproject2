@@ -1,0 +1,48 @@
+{{>layout/header}}
+
+<table class="table">
+    <colgroup>
+        <col style="width:5%">
+        <col style="width:15%">
+        <col style="width:10%">
+        <col style="width:10%">
+        <col style="width:10%">
+        <col style="width:10%">
+        <col style="width:10%">
+        <col style="width:10%">
+        <col style="width:10%">
+        <col style="width:10%">
+    </colgroup>>
+    <thead class="table-dark">
+    <tr>
+        <th scope="col">Rank</th>
+        <th scope="col">Name</th>
+        <th scope="col">Game</th>
+        <th scope="col">Win</th>
+        <th scope="col">Lose</th>
+        <th scope="col">WinLate</th>
+        <th scope="col">Kill</th>
+        <th scope="col">Death</th>
+        <th scope="col">Assist</th>
+        <th scope="col">KDA</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#rankList}}
+        <tr>
+            <th>{{id}}</th>
+            <td>{{name}}</td>
+            <td>{{game}}</td>
+            <td>{{win}}</td>
+            <td>{{lose}}</td>
+            <td>{{winlate}}</td>
+            <td>{{kill}}</td>
+            <td>{{death}}</td>
+            <td>{{assist}}</td>
+            <td>{{kda}}</td>
+        </tr>
+    {{/rankList}}
+    </tbody>
+</table>
+
+{{>layout/footer}}
