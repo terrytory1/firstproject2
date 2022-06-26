@@ -10,7 +10,6 @@ import javax.persistence.GeneratedValue;
 @ToString
 public class ArticleForm {
 
-
     private Long id;
     private String title;
     private String content;

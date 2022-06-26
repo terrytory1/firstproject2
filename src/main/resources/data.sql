@@ -17,3 +17,5 @@ INSERT INTO comment(id, article_id, nickname, body) VALUES (6, 5, 'lee', '김밥
 INSERT INTO comment(id, article_id, nickname, body) VALUES (7, 6, 'park', '조깅');
 INSERT INTO comment(id, article_id, nickname, body) VALUES (8, 6, 'kim', '유튜브');
 INSERT INTO comment(id, article_id, nickname, body) VALUES (9, 6, 'lee', '독서');
+
+INSERT INTO record(id, name, game, champion, kill, death, assist, win_lose, season) VALUES (1, '가나다', 1, '라마바', 1, 1, 1, 'win', 221);
