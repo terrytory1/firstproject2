@@ -18,4 +18,6 @@ INSERT INTO comment(id, article_id, nickname, body) VALUES (7, 6, 'park', '조�
 INSERT INTO comment(id, article_id, nickname, body) VALUES (8, 6, 'kim', '유튜브');
 INSERT INTO comment(id, article_id, nickname, body) VALUES (9, 6, 'lee', '독서');
 
-INSERT INTO record(id, name, game, champion, kill, death, assist, win_lose, season) VALUES (1, '가나다', 1, '라마바', 1, 1, 1, 'win', 221);
+INSERT INTO record(id, name, game, champion, kill, death, assist, win, lose, season) VALUES (1, '가나다', 1, '라마바', 3, 2, 8, 1, 0, 221);
+INSERT INTO record(id, name, game, champion, kill, death, assist, win, lose, season) VALUES (2, '가나다', 1, '라마바', 1, 4, 1, 0, 1, 221);
+INSERT INTO record(id, name, game, champion, kill, death, assist, win, lose, season) VALUES (3, '구누두', 1, '루무부', 5, 1, 6, 1, 0, 221);

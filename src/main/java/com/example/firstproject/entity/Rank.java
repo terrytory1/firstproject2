@@ -17,8 +17,9 @@ public class Rank {
     @Id // 대표값 지정
     @GeneratedValue(strategy = GenerationType.IDENTITY) // 자동 생성
     private Long id;
-    @OneToMany(mappedBy = "rank")
-    private List<Record> records = new ArrayList<Record>();
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "record_id")
+    private Record record;
     @Column
     private String name;
     @Column

@@ -14,7 +14,7 @@ public class Record {
     @Id // 대표값 지정
     @GeneratedValue(strategy = GenerationType.IDENTITY) // 자동 생성
     private Long id;
-    @ManyToOne(fetch = FetchType.LAZY)
+    @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "rank_id")
     private Rank rank;
     @Column
@@ -30,7 +30,9 @@ public class Record {
     @Column
     private Long assist;
     @Column
-    private String win_lose;
+    private Long win;
+    @Column
+    private Long lose;
     @Column
     private Long season;
 }

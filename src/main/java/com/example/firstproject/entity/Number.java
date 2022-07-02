@@ -18,5 +18,5 @@ import javax.persistence.Id;
 public class Number {
 
     @Id // 대표값 지정
-    private Long id;
+    private Long gid;
 }
